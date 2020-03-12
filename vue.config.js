@@ -1,4 +1,5 @@
-// vue.config.js
 module.exports = {
-publicPath: ‘/ermeticanuxt/’
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/my-project/'
+    : '/'
 }
